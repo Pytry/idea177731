@@ -19,15 +19,14 @@
   </parent>
 
   <modules>
-    <module>correct</module>
-    <module>correct-also</module>
-    <module>wrong</module>
+    <module>non-executable</module>
+    <module>executable-war</module>
   </modules>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
-
 
 </project>
