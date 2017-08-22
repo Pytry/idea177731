@@ -1,18 +1,14 @@
 package com.example.idea177731;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class NonExecutableRestApi
+public class WrongForgotConfigureRestApi
 {
-  @Value("customMessage")
-  private String customMessage;
-
-  @RequestMapping("/")
+  @RequestMapping
   public String index() {
 
-    return "Hello!";
+    return "Hello again as well!";
   }
 }

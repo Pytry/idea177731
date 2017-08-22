@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class NonExecutableRestApi
+public class WrongNoMainRestApi
 {
   @Value("customMessage")
   private String customMessage;

@@ -6,9 +6,9 @@
   <groupId>com.example</groupId>
   <artifactId>wrong-forgot-configure</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
-  <name>wrong</name>
+  <name>${project.artifactId}</name>
   <description>Demo project for Spring Boot</description>
 
   <parent>
@@ -33,10 +33,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
       <scope>provide</scope>
-      <!--
-      If this is supposed to be a jar, then you should
-      not include the tomcat starter
-      -->
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -46,6 +42,7 @@
   </dependencies>
 
   <build>
+    <finalName>${project.artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
@@ -54,9 +51,6 @@
         Default is to assume it should be a standalone executable.
         A servlet initializer is being used, but the configure method
         does not have an override.
-        The project is configured to generate only a 'jar' file, so
-        either change packaging to 'war' and add the configure method, or
-        do not include the servlet initializer.
         -->
       </plugin>
     </plugins>

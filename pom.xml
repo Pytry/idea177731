@@ -19,8 +19,12 @@
   </parent>
 
   <modules>
-    <module>non-executable</module>
     <module>executable-war</module>
+    <module>non-executable</module>
+    <module>non-executable-with-plugin</module>
+    <module>wrong-forgot-configure</module>
+    <module>wrong-no-main</module>
+    <module>wrong-packaging</module>
   </modules>
 
   <properties>

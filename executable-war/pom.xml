@@ -8,7 +8,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>Executable WAR</name>
+  <name>${project.artifactId}</name>
   <description>Executable Standalone WAR or Deploy to Servlet Container</description>
 
   <parent>
@@ -42,12 +42,11 @@
   </dependencies>
 
   <build>
-    <finalName>correct-also</finalName>
+    <finalName>${project.artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <!--Default is to assume it should be a standalone executable.-->
       </plugin>
     </plugins>
   </build>
